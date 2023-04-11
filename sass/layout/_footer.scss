@@ -1,0 +1,68 @@
+
+.footer {
+    background-color: rgb(78, 78, 134);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    gap: 1.4rem;
+
+    padding-block: 3rem;
+
+    &__logo {
+
+    }
+    
+    &__social-links {
+
+        ul {
+            display: flex;
+            gap: 1rem;   
+            
+            li {
+
+                a {
+                    svg {
+
+                        path {
+                            transition: 0.3s;
+                        }
+                        &:hover path {
+                            fill: aqua;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav {
+
+        ul {
+            display: grid;
+            justify-items: center;
+            gap: 0.2rem;
+
+            li {
+
+                a {
+                    color: white;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color : aqua;
+                    }
+                }
+            }
+        }
+    }
+
+    &__btn {
+        padding-inline: 1.2rem;
+    }
+
+    &__rights {
+        color: gray;
+        font-size: 0.9rem;
+    }
+}

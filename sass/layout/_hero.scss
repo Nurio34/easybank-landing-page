@@ -1,0 +1,49 @@
+.hero {
+    background-color: rgb(250, 247, 247);
+    position: relative;
+
+    padding-block-end: 3rem;
+    
+    &__images {
+        display: grid;
+        justify-content: center;
+        height: 340px;
+
+        .intro {
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                max-width: 435px;
+                transform: translate(0px,-50px);
+            }
+        }
+        .mockups {
+            grid-column: 1/-1;
+            grid-row: 1/-1;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                max-width: 435px;
+                transform: translateY(-135px);
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        p{
+            padding: 1.2rem;
+        }
+    }
+}

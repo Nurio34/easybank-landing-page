@@ -1,0 +1,35 @@
+
+@media (min-width:750px) {
+.easybank {
+    text-align: start; //
+    padding-inline: 11vw;
+    grid-template-columns: 1fr;
+
+    h2 {
+        width: unset; //
+        justify-self: start; //
+    }
+
+    p.modified {
+        justify-self: self-start; //
+        width: 60ch; //
+    }
+
+    .flex-cont {
+        flex-direction: row; //
+        justify-content: space-between;
+
+        .flex-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            p {
+                max-width: 29ch;
+                padding-inline-end: 0.04rem;
+            }
+        }
+    }
+}
+}

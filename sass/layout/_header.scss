@@ -1,0 +1,110 @@
+
+.header {
+    background-color: white;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+
+    position: relative;
+    z-index: 1;
+
+    &__logo {
+
+        img {}
+    }
+
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        
+        .fa-bars {
+
+        }
+        .fa-xmark {
+            transform: translateX(-18px);
+        }
+    }
+
+
+    &__nav-mobile-hidden {
+        background-color: white;
+        border-radius: 0.6rem;
+        
+        width: 70%;
+
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,0%);
+
+        display: flex;
+        justify-content: center;
+
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+
+
+        ul {
+            padding: 1rem;
+            display: grid;
+            gap: 1rem;
+
+            li {
+                justify-self: center;
+                a {
+                    color: black;
+                    border-bottom : 2px solid transparent;
+                    padding-bottom: 0.2rem;
+                    transition: 0.3s;
+
+                    &:hover {
+                        border-color: rgb(98, 212, 98);
+                    }
+                }
+            }
+        }
+        
+    }
+    &__nav-mobile-visible {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(-50%,110%);
+    }
+
+
+    &__nav-desktop {
+        display: none;
+    }
+
+
+    &__request-btn {
+        display: none;
+    }
+
+
+    &__overlay-hidden {
+        width: 100%;
+        height: 94.16vh;
+        background-image: linear-gradient(to bottom, gray, transparent);
+
+        position: absolute;
+        left:0;
+        bottom: 0;
+        transform: translate(0,100%);
+
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    &__overlay-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
